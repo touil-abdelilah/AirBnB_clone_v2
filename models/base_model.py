@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, DateTime
 import uuid
@@ -46,4 +47,3 @@ class BaseModel:
         """Delete the current instance from storage"""
         from models import storage
         storage.delete(self)
-
